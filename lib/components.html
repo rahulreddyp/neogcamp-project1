@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <h1>Welcome to rahul's component library</h1>
+    <p>I am attending neog.camp and I want to make a library which would make all my projects look good and consistent
+    </p>
+
+    <hr>
+
+    <h2>@Typography</h2>
+    <h1>This is a Bigger heading</h1>
+    <h2>This is second biggest</h2>
+    <p>Let ne show you the normal text paragraph.</p>
+    <small>This is relatively smaller text</small>
+    <hr>
+
+    <h2>@container</h2>
+    <h3>Fluid Container</h3>
+    <div class="container">This is a fluid container and it will go till the end of the page</div>
+
+    <h3>center Container</h3>
+    <div class="container-center">This is a container and it will go till the specified width</div>
+
+    <hr>
+    <h2>@Links</h2>
+
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
+
+    <hr>
+
+    <h2>@Lists</h2>
+    <h3>Unordered list</h3>
+    <h3>This list will not have the bullet</h3>
+    <ul class="list-non-bullet">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
+    <h3>Unordered Inline list</h3>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline">Inline Item One</li>
+        <li class="list-item-inline">Inline Item Two</li>
+        <li class="list-item-inline">Inline Item Three</li>
+    </ul>
+
+    <h3>Reverse ordered List</h3>
+    <ol reversed>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Break</li>
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2>
+    <nav class="navigation container">
+        <div class="nav-brand">IamBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link link-active" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/">projects</a></li>
+            <li class="list-item-inline"><a class="link" href="">About</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>@header</h2>
+    <header class="hero">
+        <img class="hero-img" src="../images/coding.svg" alt="" />
+        <h1 class="hero-heading">I am a <span class="heading-inverted">Web Developer</span></h1>
+    </header>
+
+    <hr>
+
+    <h2>@section</h2>
+
+    <section class="section">
+        <div class="container container-center">
+            <h3>white section</h3>
+            <p>The session is akin to how it works. You get a design, generally in Figma, sketch etc. And then you have to replicate that design using CSS. Where new developers go wrong sometimes is not using the right semantic element for components, and thus, we'll cover that topic first.</p>
+        </div>        
+    </section>
+    <section class="section ow">
+        <div class="container container-center">
+            <h3>off white section</h3>
+            <p>This session is going to be verbose. Which means there's less concepts and more keyword based coding. This is the nature of HTML/CSS, that you need to know the right keyword. Therefore, we will do online search to find out what we need.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links list-non-bullet">
+            <li class="list-item-inline">
+                <a class="link" href="/">SocialOne</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">SocialTwo</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">
+                SocialThree</a>
+            </li>
+        </ul>
+    </footer>
+    <div style="height: 20vh;"></div>
+</body>
+
+</html>
