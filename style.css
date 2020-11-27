@@ -4,6 +4,7 @@
     --primary-color: #F87171;
     --dark-gray: #9CA3AF;
     --off-white: #E5E7EB;
+    --pale-indigo: #818CF8;
 }
 
 body {
@@ -11,10 +12,13 @@ body {
     margin: 0px;
 }
 
+hr {
+    margin: 2rem 0rem;
+}
+
 /* Container */
 .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0rem 1rem;
 }
 
 .container-center {
@@ -29,6 +33,7 @@ body {
 
 /* links */
 .link {
+    box-sizing: border-box;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
@@ -45,12 +50,12 @@ body {
     border: 1px solid var(--primary-color)
 }
 
+/* Project Link style */
 .link-effects {
+    color: rgb(168, 68, 68);
     text-decoration: none;
-    font-weight: bold;
     position: relative;
-    padding: 10px;
-
+    margin: 1rem;
 }
 
 .link-effects:before, .link-effects:after {
@@ -62,6 +67,7 @@ body {
 }
 
 .link-effects:before {
+    
     top: -2.5%;
 	left: -1%;
 	border-top: 2px solid var(--primary-color);
@@ -75,14 +81,10 @@ body {
 	border-right: 2px solid var(--primary-color);
 }
 
-link-effects:hover:before, .link-effects:hover:after{
+.link-effects:hover:before, .link-effects:hover:after{
 	width: 100%;
 	height: 100%;
 	transition: all 0.3s ease;
-}
-
-hr {
-    margin: 2rem 0;
 }
 
 /* lists */
@@ -99,32 +101,40 @@ hr {
 
 .navigation {
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding-bottom: 1rem;
     color: white;
     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 .nav-brand {
-    font-weight: bold ;
+    font-weight: bold;
+    font-style: italic;
+    font-size: x-large;
+    letter-spacing: 2px;
 }
+
 .navigation .nav-pills {
     text-align: right;
 }
+
 .navigation .link {
     color: white;
+    letter-spacing: 1px;    
 }
 
 .navigation .link-active {
     font-weight: bold;
 }
 
+/* header */
 .hero {
     padding: 2rem;
     padding-top: 5rem;
 }
 
 .hero .hero-img {
-    max-width: 450px;
+    max-width: 350px;
     display: block;
     margin: auto;
 }
@@ -142,11 +152,17 @@ hr {
 /* section */
 .section {
     padding: 2rem;
-
+    justify-content: center;
 }
 
-.section h3{
+.section h2{
     text-align: center;
+}
+
+.section-underline {
+    margin: auto;
+    border-top: 2px solid var(--pale-indigo);
+    width: 20%;
 }
 
 .ow {
@@ -160,6 +176,7 @@ hr {
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .footer .link {
@@ -170,6 +187,7 @@ hr {
     font-weight: bold;
     font-size: large;
 }
+
 .footer ul {
-    padding-inline-start: stop;
+    padding-inline-start: 0px;
 }
