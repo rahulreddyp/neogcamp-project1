@@ -22,6 +22,11 @@ body {
     margin: auto;
 }
 
+/* padding for projects section */
+.padding-md {
+    padding: 2rem;
+}
+
 /* links */
 .link {
     text-decoration: none;
@@ -38,6 +43,42 @@ body {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color)
+}
+
+.link-effects {
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+
+}
+
+.link-effects:before, .link-effects:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+}
+
+.link-effects:before {
+    top: -2.5%;
+	left: -1%;
+	border-top: 2px solid var(--primary-color);
+	border-left: 2px solid var(--primary-color);	
+}
+
+.link-effects:after {
+	bottom: -2.5%;
+	right: -1%;
+	border-bottom: 2px solid var(--primary-color);
+	border-right: 2px solid var(--primary-color);
+}
+
+link-effects:hover:before, .link-effects:hover:after{
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
 }
 
 hr {
@@ -79,6 +120,7 @@ hr {
 
 .hero {
     padding: 2rem;
+    padding-top: 5rem;
 }
 
 .hero .hero-img {
