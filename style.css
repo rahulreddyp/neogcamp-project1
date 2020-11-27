@@ -55,7 +55,6 @@ hr {
     color: rgb(168, 68, 68);
     text-decoration: none;
     position: relative;
-    margin: 1rem;
 }
 
 .link-effects:before, .link-effects:after {
