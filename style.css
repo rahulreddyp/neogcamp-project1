@@ -10,7 +10,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: auto;
-    max-width: 700px;
 }
 
 hr {
@@ -33,17 +32,19 @@ hr {
     text-decoration: none;
     padding: 0.5rem 1rem;
     margin-left: 2rem;
+    border-radius: 0.5rem;
+    line-height: 50px;
 }
 
 .link-primary {
+    width: 150px;
     background-color: var(--primary-color);
-    border-radius: 0.5rem;
     color: white;
 }
 
 .link-secondary {
+    width: 150px;
     color: var(--primary-color);
-    border-radius: 0.5rem;
     border: 1px solid var(--primary-color)
 }
 
@@ -53,10 +54,18 @@ hr {
 
 }
 
+@media (max-width: 469px) {
+    .padding-md .link-secondary {
+        display: inline;
+    }
+}
+
 /* Project link's style */
 .link-effects {
+    box-sizing: border-box;
     color: rgb(168, 68, 68);
     position: relative;
+    margin-bottom:15px
 }
 
 .link-effects:before, .link-effects:after {
